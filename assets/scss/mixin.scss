@@ -1,0 +1,12 @@
+// mixin
+@mixin my-style($c, $fs, $ff, $ls, $fw) {
+  color: $c;
+  font-size: $fs;
+  font-family: $ff;
+  letter-spacing: $ls;
+  font-weight: $fw;
+}
+
+@mixin media-style($fs) {
+  font-size: $fs;
+}
