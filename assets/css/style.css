@@ -105,6 +105,10 @@ body main .introduction article div h4 {
   font-weight: 800;
   margin-bottom: 18px;
 }
+body main .introduction article div h4:hover {
+  color: red;
+  transition: 0.5s;
+}
 body main .introduction article img {
   height: 100%;
 }
@@ -142,6 +146,11 @@ body main .middle div p:last-of-type {
 }
 body main .middle .grid img {
   position: absolute;
+}
+body main .middle .grid img:hover {
+  transition: 1s;
+  transform: scale(1.1);
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
 body main .middle .grid img:nth-of-type(1) {
   width: 25%;
