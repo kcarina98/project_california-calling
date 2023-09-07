@@ -1,11 +1,79 @@
-@import "./mixin.scss";
-
 @media only screen and (max-width: 576px) {
-  main {
-    .introduction {
-      h2 {
-        @include media-style(2rem);
+  body {
+    header {
+      button {
+        margin-left: 40%;
       }
+    }
+    main {
+      .introduction {
+        overflow: hidden;
+        h2 {
+          font-size: 4rem;
+        }
+      }
+      .middle {
+        div {
+          padding-top: 10vh;
+          margin-left: 20px;
+          width: 90%;
+          text-align: center;
+          p {
+            &:first-of-type {
+              margin-bottom: 20px;
+            }
+          }
+        }
+        img {
+          display: none;
+        }
+      }
+      .golden-bear {
+        div {
+          flex-direction: column;
+        }
+      }
+      .poppy-bear {
+        div {
+          flex-direction: column;
+        }
+      }
+    }
+    footer {
+      height: auto;
+      section {
+        position: relative;
+        margin-left: 0px;
+        div {
+          width: 100%;
+          padding: 10%;
+        }
+        .banner {
+          position: sticky;
+          top: 0;
+          transform: rotate(0deg);
+          overflow: hidden;
+          height: 200px;
+          p {
+            width: 100vw;
+            text-align: center;
+          }
+        }
+      }
+      article {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+  @keyframes banner {
+    0%,
+    100% {
+      transform: translateX(-30%);
+    }
+
+    50% {
+      transform: translateX(10%);
     }
   }
 }

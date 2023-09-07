@@ -6,7 +6,3 @@
   letter-spacing: $ls;
   font-weight: $fw;
 }
-
-@mixin media-style($fs) {
-  font-size: $fs;
-}

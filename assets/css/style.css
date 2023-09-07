@@ -1,8 +1,3 @@
-@media only screen and (max-width: 576px) {
-  main .introduction h2 {
-    font-size: 2rem;
-  }
-}
 @font-face {
   font-family: inter;
   src: url("../fonts/Inter-VariableFont_slnt,wght.ttf");
@@ -18,18 +13,14 @@
   font-size: 62.5%;
 }
 
-.button-style,
-body footer section div button,
-body header button {
+.button-style, body footer section div button, body header button {
   padding: 10px 30px;
   color: white;
   font-size: 2rem;
   border: 1px solid white;
   background-color: black;
 }
-.button-style:hover,
-body footer section div button:hover,
-body header button:hover {
+.button-style:hover, body footer section div button:hover, body header button:hover {
   background-color: white;
   color: black;
 }
@@ -92,13 +83,13 @@ body main .introduction h2 {
   padding-left: 10vw;
   padding-bottom: 10vh;
 }
-body main article {
+body main .introduction article {
   height: 60vh;
   display: flex;
   justify-content: space-between;
   padding-left: 10vw;
 }
-body main article div p {
+body main .introduction article div p {
   color: white;
   font-size: 1.4rem;
   font-family: work;
@@ -106,7 +97,7 @@ body main article div p {
   font-weight: 400;
   margin-bottom: 5px;
 }
-body main article div h4 {
+body main .introduction article div h4 {
   color: white;
   font-size: 8.6rem;
   font-family: inter;
@@ -114,7 +105,7 @@ body main article div h4 {
   font-weight: 800;
   margin-bottom: 18px;
 }
-body main article img {
+body main .introduction article img {
   height: 100%;
 }
 body main .middle {
@@ -147,7 +138,7 @@ body main .middle div p:first-of-type {
   margin-bottom: 70vh;
 }
 body main .middle div p:last-of-type {
-  margin-bottom: 30vh;
+  margin-bottom: 40vh;
 }
 body main .middle img {
   position: absolute;
@@ -288,18 +279,18 @@ body main .poppy-bear .flex div p {
 }
 body main .poppy-bear img:first-of-type {
   width: 30%;
-  margin-bottom: 10%;
+  margin-bottom: 20%;
   left: 5%;
   position: relative;
   z-index: 1;
 }
 body main .poppy-bear img:last-of-type {
   width: 60%;
-  padding-bottom: 50px;
+  padding-bottom: 20vh;
 }
 body footer {
   background-color: black;
-  height: 70vh;
+  height: auto;
   overflow: hidden;
 }
 body footer section {
@@ -354,6 +345,7 @@ body footer section .banner p span {
 }
 body footer section article {
   padding-left: 0;
+  display: flex;
 }
 body footer section article div img {
   width: 30px;
@@ -365,7 +357,7 @@ body footer section article div p {
 }
 body footer section article div:nth-of-type(2) {
   display: flex;
-  padding-right: 45%;
+  padding-right: 40%;
   gap: 30px;
 }
 body footer section article div:nth-of-type(2) img {
@@ -382,12 +374,74 @@ body footer section article div:nth-of-type(2) img {
   }
 }
 @keyframes banner {
-  0%,
-  100% {
+  0%, 100% {
     transform: translateX(0%);
   }
   50% {
     transform: translateX(30%);
+  }
+}
+@media only screen and (max-width: 576px) {
+  body header button {
+    margin-left: 40%;
+  }
+  body main .introduction {
+    overflow: hidden;
+  }
+  body main .introduction h2 {
+    font-size: 4rem;
+  }
+  body main .middle div {
+    padding-top: 10vh;
+    margin-left: 20px;
+    width: 90%;
+    text-align: center;
+  }
+  body main .middle div p:first-of-type {
+    margin-bottom: 20px;
+  }
+  body main .middle img {
+    display: none;
+  }
+  body main .golden-bear div {
+    flex-direction: column;
+  }
+  body main .poppy-bear div {
+    flex-direction: column;
+  }
+  body footer {
+    height: auto;
+  }
+  body footer section {
+    position: relative;
+    margin-left: 0px;
+  }
+  body footer section div {
+    width: 100%;
+    padding: 10%;
+  }
+  body footer section .banner {
+    position: sticky;
+    top: 0;
+    transform: rotate(0deg);
+    overflow: hidden;
+    height: 200px;
+  }
+  body footer section .banner p {
+    width: 100vw;
+    text-align: center;
+  }
+  body footer article {
+    display: flex;
+    flex-direction: column;
+  }
+  @keyframes banner {
+    0%, 100% {
+      transform: translateX(-30%);
+    }
+    50% {
+      transform: translateX(10%);
+    }
   }
 }
 

@@ -1,6 +1,5 @@
 @import "./mixin.scss";
 @import "./variable.scss";
-@import "./media.scss";
 
 @font-face {
   font-family: inter;
@@ -87,24 +86,24 @@ body {
         padding-left: 10vw;
         padding-bottom: 10vh;
       }
-    }
-    article {
-      height: 60vh;
-      display: flex;
-      justify-content: space-between;
-      padding-left: 10vw;
-      div {
-        p {
-          @include my-style($w, 1.4rem, work, 0, 400);
-          margin-bottom: 5px;
+      article {
+        height: 60vh;
+        display: flex;
+        justify-content: space-between;
+        padding-left: 10vw;
+        div {
+          p {
+            @include my-style($w, 1.4rem, work, 0, 400);
+            margin-bottom: 5px;
+          }
+          h4 {
+            @include my-style($w, 8.6rem, inter, -2.5px, 800);
+            margin-bottom: 18px;
+          }
         }
-        h4 {
-          @include my-style($w, 8.6rem, inter, -2.5px, 800);
-          margin-bottom: 18px;
+        img {
+          height: 100%;
         }
-      }
-      img {
-        height: 100%;
       }
     }
 
@@ -128,7 +127,7 @@ body {
             margin-bottom: 70vh;
           }
           &:last-of-type {
-            margin-bottom: 30vh;
+            margin-bottom: 40vh;
           }
         }
       }
@@ -213,7 +212,7 @@ body {
         }
       }
 
-      // animation
+      // *animation
       .animation {
         z-index: -1;
         background-color: white;
@@ -229,6 +228,7 @@ body {
         }
       }
     }
+
     .poppy-bear {
       background-color: $ws;
       padding-left: 10vw;
@@ -258,14 +258,14 @@ body {
       img {
         &:first-of-type {
           width: 30%;
-          margin-bottom: 10%;
+          margin-bottom: 20%;
           left: 5%;
           position: relative;
           z-index: 1;
         }
         &:last-of-type {
           width: 60%;
-          padding-bottom: 50px;
+          padding-bottom: 20vh;
         }
       }
     }
@@ -274,7 +274,7 @@ body {
   // !FOOTER
   footer {
     background-color: $b;
-    height: 70vh;
+    height: auto;
     overflow: hidden;
     section {
       margin-left: 10%;
@@ -312,8 +312,10 @@ body {
           }
         }
       }
+
       article {
         padding-left: 0;
+        display: flex;
         div {
           img {
             width: 30px;
@@ -325,7 +327,7 @@ body {
           }
           &:nth-of-type(2) {
             display: flex;
-            padding-right: 45%;
+            padding-right: 40%;
             gap: 30px;
             img {
               width: 100px;
@@ -359,3 +361,7 @@ body {
     transform: translateX(30%);
   }
 }
+
+// !Media querries
+
+@import "./media.scss";
