@@ -138,44 +138,44 @@ body main .middle div p:first-of-type {
   margin-bottom: 70vh;
 }
 body main .middle div p:last-of-type {
-  margin-bottom: 40vh;
+  margin-bottom: 5vh;
 }
-body main .middle img {
+body main .middle .grid img {
   position: absolute;
 }
-body main .middle img:nth-of-type(1) {
-  width: 20%;
+body main .middle .grid img:nth-of-type(1) {
+  width: 25%;
   top: -5%;
   right: 10%;
 }
-body main .middle img:nth-of-type(2) {
-  width: 15%;
+body main .middle .grid img:nth-of-type(2) {
+  width: 20%;
   top: 10%;
   left: 5%;
 }
-body main .middle img:nth-of-type(3) {
-  width: 15%;
+body main .middle .grid img:nth-of-type(3) {
+  width: 20%;
   top: 25%;
   right: 5%;
 }
-body main .middle img:nth-of-type(4) {
-  width: 20%;
+body main .middle .grid img:nth-of-type(4) {
+  width: 25%;
   left: 20%;
   top: 40%;
 }
-body main .middle img:nth-of-type(5) {
-  width: 20%;
+body main .middle .grid img:nth-of-type(5) {
+  width: 25%;
   right: 20%;
   top: 50%;
 }
-body main .middle img:nth-of-type(6) {
-  width: 15%;
+body main .middle .grid img:nth-of-type(6) {
+  width: 20%;
   left: 5%;
   top: 70%;
 }
-body main .middle img:nth-of-type(7) {
-  width: 20%;
-  top: 90%;
+body main .middle .grid img:nth-of-type(7) {
+  width: 25%;
+  top: 82.5%;
   right: 30%;
 }
 body main .golden-bear {
@@ -217,11 +217,11 @@ body main .golden-bear .flex div p {
   padding-top: 20px;
   margin-left: -10vw;
 }
-body main .golden-bear img:first-of-type {
+body main .golden-bear .bear-img img:first-of-type {
   width: 60%;
   padding-left: 10vw;
 }
-body main .golden-bear img:last-of-type {
+body main .golden-bear .bear-img img:last-of-type {
   width: 30%;
   margin-left: -10%;
   margin-bottom: 7.5%;
@@ -231,8 +231,10 @@ body main .golden-bear .animation {
   background-color: white;
   margin-top: -15%;
   overflow: hidden;
+  height: 50vh;
 }
 body main .golden-bear .animation .animation-circle {
+  height: 50vh;
   margin-left: 80%;
   margin-top: -10%;
   padding: 0;
@@ -382,6 +384,11 @@ body footer section article div:nth-of-type(2) img {
   }
 }
 @media only screen and (max-width: 576px) {
+  body header img {
+    width: 10%;
+    position: fixed;
+    top: 20px;
+  }
   body header button {
     margin-left: 40%;
   }
@@ -400,11 +407,45 @@ body footer section article div:nth-of-type(2) img {
   body main .middle div p:first-of-type {
     margin-bottom: 20px;
   }
-  body main .middle img {
+  body main .middle .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-top: -100px;
+  }
+  body main .middle .grid img {
+    position: static;
+  }
+  body main .middle .grid img:nth-of-type(1) {
+    width: 100%;
+  }
+  body main .middle .grid img:nth-of-type(2) {
+    width: 100%;
+  }
+  body main .middle .grid img:nth-of-type(3) {
+    width: 100%;
+  }
+  body main .middle .grid img:nth-of-type(4) {
+    width: 100%;
+  }
+  body main .middle .grid img:nth-of-type(5) {
+    width: 100%;
+  }
+  body main .middle .grid img:nth-of-type(6) {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  body main .middle .grid img:nth-of-type(7) {
     display: none;
   }
   body main .golden-bear div {
     flex-direction: column;
+  }
+  body main .golden-bear .animation {
+    height: 30vh;
+  }
+  body main .golden-bear .animation .animation-circle {
+    height: 30vh;
   }
   body main .poppy-bear div {
     flex-direction: column;
